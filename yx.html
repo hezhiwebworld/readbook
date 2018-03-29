@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cn.wifi.com/js/wkb/0.1.0/wkb.js"></script>
+  <!-- <script src="http://10.241.81.56:9998/wkb.js"></script> -->
+  <title>游戏</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+      background: #EEEEEE;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .link {
+      text-decoration: none;
+      display: inline-block;
+      position: absolute;
+      right: 0.5rem;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      background-color: #0285F1;
+      color: #FFF;
+      border-radius: 50% /100%;
+      /* padding: 0.2rem 0.5rem; */
+      /* padding-bottom: 1px; */
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .app {
+      min-height: 100%;
+      background: #FFFFFF;
+      margin-top: 0.3rem;
+      font-size: 0;
+    }
+
+    .app p {
+      font-size: 14px;
+    }
+
+    .top_title {
+      line-height: 1rem;
+      vertical-align: middle;
+
+    }
+
+    .top_title img {
+      vertical-align: middle;
+      height: 16px;
+      width: 16px;
+      padding: 0 0.1rem;
+      /* top: -1px;
+      position: relative; */
+    }
+
+    .item {
+      overflow: hidden;
+      padding-left: 0.3rem;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+
+    .item_left {
+      width: 1.6rem;
+      float: left;
+    }
+
+    .item_left img {
+      width: 100%;
+    }
+
+    .item_right {
+      position: relative;
+      overflow: hidden;
+
+    }
+
+    .item_right p {
+      font-size: 0.4rem;
+      text-indent: .3rem;
+      line-height: 0.57rem;
+      letter-spacing: 1px;
+    }
+
+    .item_right a {
+      font-size: 14px;
+    }
+
+    p.num {
+      color: #686868;
+      letter-spacing: 0;
+      font-size: 0.3rem;
+    }
+
+    .title {
+      color: #292929;
+
+    }
+
+    p.title_two {
+      color: #292929;
+      font-size: 0.3rem;
+    }
+
+    .item a {
+      display: block;
+      text-decoration: none;
+    }
+
+    /* 一像素下划线 */
+
+    .singleLineBottom,
+    .singleLineBottomGray,
+    .singleLineTop {
+      position: relative
+    }
+
+    .singleLineBottom:after,
+    .singleLineBottomGray:after,
+    .singleLineTop:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: auto;
+      right: auto;
+      height: 1px;
+      width: 100%;
+      background-color: #EBEBEB;
+      display: block;
+      z-index: 15;
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0
+    }
+
+    .singleLineBottom:after,
+    .singleLineBottomGray:after {
+      top: auto;
+      bottom: 0
+    }
+
+    .singleLineBottomGray:after {
+      background-color: #EBEBEB
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio:2) {
+      .singleLineBottom:after,
+      .singleLineBottomGray:after,
+      .singleLineTop:before {
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5)
+      }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio:3) {
+      .singleLineBottom:after,
+      .singleLineBottomGray:after,
+      .singleLineTop:before {
+        -webkit-transform: scaleY(.33333);
+        transform: scaleY(.33333)
+      }
+      .hairlines:after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(.33333);
+        transform: scale(.33333);
+        -webkit-transform-origin: left top;
+        transform-origin: left top
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <p class="top_title">
+      <img src="./icon.png">不用下载就可以畅玩的游戏</p>
+
+    <!-- 
+      // 模板
+     <div class="item singleLineBottom" data-url="http://act1.lianwifi.com/h5/game/play?ref=qb&game_id=jzsc&xsid=&show_ad=&extdata=">
+      <div class="item_left">
+        <img src="http://annimg01.shengpay.com/walletstatic/juezhanshacheng.png" alt="">
+      </div>
+      <div class="item_right">
+        <p class="title btnname">决战沙城</p>
+        <p class="num">168万点击</p>
+        <p class="title title_two">和兄弟一起，战沙城</p>
+        <a href="javascript:;" class="link">打开</a>
+      </div>
+    </div>
+    -->
+
+
+    <div class="item singleLineBottom" data-url="http://act1.lianwifi.com/h5/game/play?ref=qb&game_id=jzsc&xsid=&show_ad=&extdata=">
+      <div class="item_left">
+        <img src="http://annimg01.shengpay.com/walletstatic/juezhanshacheng.png" alt="">
+      </div>
+      <div class="item_right">
+        <p class="title btnname">决战沙城</p>
+        <p class="num">168万点击</p>
+        <p class="title title_two">和兄弟一起，战沙城</p>
+        <a href="javascript:;" class="link">打开</a>
+      </div>
+    </div>
+
+    <div class="item singleLineBottom" data-url="http://act1.lianwifi.com/h5/game/play?ref=qb&game_id=xlsbz&xsid=&show_ad=&extdata=">
+
+      <div class="item_left">
+        <img src="http://annimg01.shengpay.com/walletstatic/xinbanxiakexing.png" alt="">
+      </div>
+      <div class="item_right">
+        <p class="title btnname">新版侠客行</p>
+        <p class="num">154万点击</p>
+        <p class="title title_two">武侠H5大作，和兄弟一起</p>
+        <a href="javascript:;" class="link">打开</a>
+      </div>
+
+    </div>
+
+    <div class="item singleLineBottom" data-url="http://act1.lianwifi.com/h5/game/play?ref=qb&game_id=lcby&xsid=&show_ad=&extdata=">
+
+      <div class="item_left">
+        <img src="http://annimg01.shengpay.com/walletstatic/longyubaye.png" alt="">
+      </div>
+      <div class="item_right">
+        <p class="title btnname">龙城霸业</p>
+        <p class="num">137万点击</p>
+        <p class="title title_two">邀英雄再聚玛法大陆,开启</p>
+        <a href="javascript:;" class="link">打开</a>
+      </div>
+    </div>
+    <div class="item singleLineBottom" data-url="http://act1.lianwifi.com/h5/game/play?ref=qb&game_id=wscs&xsid=&show_ad=&extdata=">
+      <div class="item_left">
+        <img src="http://annimg01.shengpay.com/walletstatic/wushenchuanshuo.png" alt="">
+      </div>
+      <div class="item_right">
+        <p class="title btnname">武神传说</p>
+        <p class="num">124万点击</p>
+        <p class="title title_two">并肩征战九州，问鼎传奇之巅</p>
+        <a href="javascript:;" class="link">打开</a>
+      </div>
+    </div>
+    <div class="item singleLineBottom" data-url="http://act1.lianwifi.com/h5/game/play?ref=qb&game_id=kdyglm&xsid=&show_ad=&extdata=">
+
+      <div class="item_left">
+        <img src="http://annimg01.shengpay.com/walletstatic/koudaiyaoguai.png" alt="">
+      </div>
+      <div class="item_right">
+        <p class="title btnname">口袋妖怪H5</p>
+        <p class="num">109万点击</p>
+        <p class="title title_two">皮卡丘，就决定是你了！</p>
+        <a href="javascript:;" class="link">打开</a>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script src="https://annimg01.shengpay.com/annstatic/inx/js/zepto.mix.js"></script>
+<script src="./index.js"></script>
+<script>
+  
+  remChange()
+  function remChange() {
+    var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    var widthProportion = function () {
+      var doc = document.body || document.documentElement;
+      var p = doc.clientWidth;
+      return p / 10;
+    };
+    var changePage = function () {
+      document.getElementsByTagName('html')[0].setAttribute('style', 'font-size:' + widthProportion() + 'px !important');
+    };
+    changePage();
+    window.addEventListener(resizeEvt, changePage, false);
+  }
+
+  
+</script>
+
+</html>
